@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Launchpad · Web Interface Starter</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/" aria-label="Launchpad home"><span class="mark">↗</span> Launchpad<span class="tag">STARTER</span></a><a class="docs" href="/api/docs">API reference ↗</a></header>
+  <main>
+    <section class="hero"><p class="eyebrow">YOUR NEXT PROJECT STARTS HERE</p><h1>A small beginning.<br><span>Room for big ideas.</span></h1><p class="intro">Your interface, your Python logic, your server.<br>A working foundation you can make your own.</p><div class="hero-bottom"><a class="button" href="#playground">Try the API <span>↗</span></a><span id="connection" class="connection" role="status">Checking connection…</span></div><div class="orbit" aria-hidden="true"><span>HTML</span><span>PYTHON</span><span>CADDY</span><b>↗</b></div></section>
+    <div class="section-title"><h2>The building blocks</h2><span>01 — YOUR FOUNDATION</span></div>
+    <section class="cards" aria-label="Architecture"><article><div class="number">01 / INTERFACE</div><h3>Make it yours.</h3><p>Edit the files in <code>public/</code>. No build tools, no frontend framework required.</p><span class="pill">HTML · CSS · JavaScript</span></article><article><div class="number">02 / APPLICATION</div><h3>Give it a purpose.</h3><p>Add your Python logic in <code>app.py</code>. The demo already talks to your API.</p><span class="pill">FastAPI · Uvicorn</span></article><article><div class="number">03 / DELIVERY</div><h3>Bring it online.</h3><p>Start locally. Connect your domain when you are ready to share your work.</p><span class="pill">Caddy · Automatic HTTPS</span></article></section>
+    <section id="playground" class="workspace"><div class="project-list"><div class="section-title"><h2>What will you build?</h2><span>EXAMPLE DATA</span></div><p>These sample projects are loaded from your Python API.</p><div class="table-wrap"><table><thead><tr><th>Project</th><th>Category</th><th>Status</th></tr></thead><tbody id="projects"><tr><td colspan="3">Loading projects…</td></tr></tbody></table></div><button class="text-button" id="refresh" type="button">↻ Refresh projects</button></div><div class="form-panel"><p class="eyebrow">TRY A REAL REQUEST</p><h2>Name your next idea.</h2><form id="preview-form"><label for="title">Project name</label><input id="title" name="title" maxlength="80" required placeholder="My next great project" autocomplete="off"><button class="button" type="submit">Send to Python <span>→</span></button></form><p id="result" role="status">A live API request. Nothing is saved.</p></div></section>
+    <footer><span>Built to be a starting point.</span><span>Local first. Yours to shape.</span></footer>
+  </main>
+</body>
+</html>
